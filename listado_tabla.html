@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="build/img/logo.svg" alt="Logotipo de Bienes Raices">
+                </a>
+
+                <div class="mobile-menu">
+                    <img src="build/img/barras.svg" alt="icono menu responsive">
+                </div>
+
+                <div class="derecha">
+                    <img class="dark-mode-boton" src="build/img/dark-mode.svg">
+                    <nav class="navegacion">
+                        <a href="index.html">Inicio</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="anuncios.html">Anuncios</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+                
+            </div> <!--.barra-->
+        </div>
+    </header>
+
+  <main class="contenedor seccion">
+    <h1 class="titulo-pagina">Listado de Propiedades</h1>
+    <p class="subtitulo-pagina">Vista en formato tabla con acciones rápidas.</p>
+
+    <div class="tabla-wrapper" role="region" aria-labelledby="titulo-tabla" tabindex="0">
+      <h2 id="titulo-tabla" class="sr-only">Tabla de propiedades</h2>
+
+      <table class="tabla-propiedades">
+        <caption class="tabla-caption">Listado general de propiedades</caption>
+        <thead>
+          <tr>
+            <th scope="col">Imagen</th>
+            <th scope="col">Propiedad</th>
+            <th scope="col">Habitaciones</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Estado</th>
+            <th scope="col" class="col-acciones">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- FILA 1 -->
+          <tr>
+            <td data-label="Imagen">
+              <img class="miniatura" src="src/img/destacada.jpg" alt="Casa familiar en Villa Urquiza" loading="lazy" />
+            </td>
+            <td data-label="Propiedad">
+              <span class="prop-nombre">Casa en Venta frente al bosque</span>
+              <small class="prop-ref">Ref: C-0001 • Villa Urquiza, CABA</small>
+            </td>
+            <td data-label="Habitaciones">
+              <span class="habitaciones">4</span>
+            </td>
+            <td data-label="Precio"><strong class="precio">USD 150.000</strong></td>
+            <td data-label="Estado"><span class="estado disponible">Disponible</span></td>
+            <td data-label="Acciones" class="acciones">
+              <a class="btn btn-link" href="propiedad.html">Ver</a>
+              <button class="btn btn-peligro" type="button" aria-label="Eliminar Casa Familiar">Eliminar</button>
+            </td>
+          </tr>
+
+          <!-- FILA 2 -->
+          <tr>
+            <td data-label="Imagen">
+              <img class="miniatura" src="src/img/destacada2.jpg" alt="Departamento 2 ambientes en Belgrano" loading="lazy" />
+            </td>
+            <td data-label="Propiedad">
+              <span class="prop-nombre">Departamento 2 Amb.</span>
+              <small class="prop-ref">Ref: D-0002 • Belgrano, CABA</small>
+            </td>
+            <td data-label="Habitaciones">
+              <span class="habitaciones">2</span>
+            </td>
+            <td data-label="Precio"><strong class="precio">USD 98.000</strong></td>
+            <td data-label="Estado"><span class="estado reservada">Reservada</span></td>
+            <td data-label="Acciones" class="acciones">
+              <a class="btn btn-link" href="producto.html?id=2">Ver</a>
+              <button class="btn btn-peligro" type="button" aria-label="Eliminar Departamento 2 ambientes">Eliminar</button>
+            </td>
+          </tr>
+
+          <!-- FILA 3 -->
+          <tr>
+            <td data-label="Imagen">
+              <img class="miniatura" src="src/img/destacada3.jpg" alt="Terreno en zona norte" loading="lazy" />
+            </td>
+            <td data-label="Propiedad">
+              <span class="prop-nombre">Terreno 500 m²</span>
+              <small class="prop-ref">Ref: T-0003 • Zona Norte</small>
+            </td>
+            <td data-label="Habitaciones">
+              <span class="habitaciones">—</span>
+            </td>
+            <td data-label="Precio"><strong class="precio">USD 45.000</strong></td>
+            <td data-label="Estado"><span class="estado vendida">Vendida</span></td>
+            <td data-label="Acciones" class="acciones">
+              <a class="btn btn-link" href="producto.html?id=3">Ver</a>
+              <button class="btn btn-peligro" type="button" aria-label="Eliminar Terreno 500 m2" disabled>Eliminar</button>
+            </td>
+          </tr>
+
+          <!-- + Agregá más filas según necesites -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer seccion">
+    <div class="contenedor contenedor-footer">
+      <nav class="navegacion">
+        <a href="index.html">Portada</a>
+        <a href="listado_tabla.html">Listado (Tabla)</a>
+        <a href="listado_box.html">Listado (Box)</a>
+        <a href="producto.html">Propiedad</a>
+        <a href="comprar.html">Contactar</a>
+      </nav>
+    </div>
+    <p class="copyright">Todos los derechos Reservados &copy; 2025</p>
+  </footer>
+
+  <script src="build/js/bundle.min.js"></script>
+</body>
+</html>
