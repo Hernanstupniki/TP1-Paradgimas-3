@@ -1,6 +1,5 @@
 # **Análisis y Diseño de la Aplicación Web “Bienes Raíces”**
 
-
 ## **Introducción**
 
 La aplicación web **“Bienes Raíces”** fue desarrollada con el objetivo de crear un portal inmobiliario que permita gestionar propiedades para la venta. Utilizando tecnologías como **HTML5**, **Sass (SCSS)** y herramientas como **Node.js** y **Gulp**, se construyó una página con un diseño limpio y una estructura modular que permite un mantenimiento eficiente y una fácil escalabilidad.
@@ -12,6 +11,22 @@ El enfoque utilizado responde a la necesidad de aplicar buenas prácticas de des
 El proyecto tiene como propósito principal presentar una aplicación web modular que utilice **HTML5** para la estructura, **Sass (SCSS)** para la presentación, y un proceso de compilación y optimización basado en **Node.js** y **Gulp**.
 
 Se busca que cada vista esté correctamente estructurada, que los estilos se encuentren organizados en módulos reutilizables y que la automatización permita obtener archivos minificados y optimizados para garantizar tiempos de carga rápidos y un mejor posicionamiento en buscadores.
+
+## **Objetivos específicos**
+
+* Desarrollar una plataforma que permita mostrar propiedades de bienes raíces de manera clara y visualmente atractiva.
+* Implementar una estructura modular en los estilos usando **Sass (SCSS)** para garantizar escalabilidad.
+* Automatizar el proceso de desarrollo con **Gulp**, minimizando los tiempos de compilación y optimización.
+* Asegurar que la aplicación sea completamente **responsiva**, adaptándose a diferentes dispositivos (móviles y escritorios).
+
+## **Requisitos**
+
+* El sitio debe ser **estático** y **responsivo**.
+* Debe contener al menos las siguientes secciones: **Página principal**, **Listado de propiedades**, **Detalle de propiedad**, **Formulario de compra**.
+* Los **archivos HTML** deben estar correctamente estructurados y **validar** según los estándares de HTML5.
+* Los **estilos deben ser gestionados** mediante **Sass** para asegurar una fácil escalabilidad y mantenimiento.
+* El proyecto debe contar con una **automatización de tareas** usando **Gulp** para compilar **Sass**, minificar **CSS** y **JS**, y optimizar **imágenes**.
+* El código debe estar **documentado** y organizado siguiendo buenas prácticas de desarrollo web.
 
 ## **Tecnologías utilizadas**
 
@@ -84,12 +99,16 @@ A continuación, se describe cómo cada archivo HTML se relaciona con la consign
 
 **Relación con la consigna:** **index.html** → **Portada principal**
 
+---
+
 ### **2. Sección que liste todos los productos en forma de tabla (listado\_tabla.html)**
 
 * **Consigna:** Se requiere un archivo llamado **`listado_tabla.html`** para mostrar los productos en **formato tabla**.
 * **Archivo Actual:** **`listado_tabla.html`** (Este archivo presenta un listado de propiedades en formato tabla, donde se incluyen imágenes, nombres, habitaciones, precios, estado y acciones).
 
 **Relación con la consigna:** **listado\_tabla.html** → **Sección que liste todos los productos en forma de tabla**
+
+---
 
 ### **3. Sección que liste todos los productos en forma de box (listado\_box.html)**
 
@@ -99,6 +118,8 @@ A continuación, se describe cómo cada archivo HTML se relaciona con la consign
 **Relación con la consigna:** **anuncios.html** → **Sección que liste todos los productos en forma de box**
 **Nota:** Aunque el archivo se llama **`anuncios.html`**, cumple con la misma función que el archivo **`listado_box.html`** de la consigna.
 
+---
+
 ### **4. Sección que muestre la ficha de un producto en particular (producto.html)**
 
 * **Consigna:** Se requiere un archivo llamado **`producto.html`** para mostrar la **ficha de un producto en particular**.
@@ -106,12 +127,16 @@ A continuación, se describe cómo cada archivo HTML se relaciona con la consign
 
 **Relación con la consigna:** **propiedad.html** → **Sección que muestre la ficha de un producto en particular**
 
+---
+
 ### **5. Sección para completar el formulario de compra (comprar.html)**
 
 * **Consigna:** Se requiere un archivo llamado **`comprar.html`** para incluir el **formulario de compra**.
 * **Archivo Actual:** **`contacto.html`** (Este archivo contiene un formulario de compra donde el usuario puede ingresar los datos de contacto, dirección, medio de pago, etc. para concretar la compra de una propiedad).
 
 **Relación con la consigna:** **contacto.html** → **Sección para completar el formulario de compra**
+
+---
 
 ## **Conclusión**
 
@@ -127,10 +152,3 @@ En resumen, aunque los **nombres de archivo** no coinciden exactamente con los s
 
 Este informe describe cómo cada archivo HTML en el proyecto se relaciona con la consigna dada, haciendo las aclaraciones pertinentes sobre los nombres de archivo para garantizar que el propósito de cada uno sea claro.
 
-* **Portada principal:** **`index.html`**
-* **Listado en tabla:** **`listado_tabla.html`**
-* **Listado en boxes:** **`anuncios.html`** → **Renombrado a `listado_box.html`** en la consigna.
-* **Ficha de producto:** **`propiedad.html`** → **Renombrado a `producto.html`** en la consigna.
-* **Formulario de compra:** **`contacto.html`** → **Renombrado a `comprar.html`** en la consigna.
-
-Este informe describe cómo cada archivo HTML en el proyecto se relaciona con la consigna dada, haciendo las aclaraciones pertinentes sobre los nombres de archivo para garantizar que el propósito de cada uno sea claro.
