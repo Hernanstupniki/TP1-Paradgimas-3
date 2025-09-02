@@ -1,35 +1,30 @@
-﻿# TP1-Paradgimas-3
+# **Análisis y Diseño de la Aplicación Web “Bienes Raíces”**
 
+## **Introducción**
 
-# Análisis y Diseño de la Aplicación Web “Bienes Raíces”
-
-## Introducción
-
-La aplicación web “Bienes Raíces” fue desarrollada como un sitio estático con múltiples vistas, representando las secciones habituales de una página inmobiliaria. Su diseño y construcción se apoyan en un conjunto de tecnologías modernas que garantizan orden, mantenibilidad, escalabilidad y eficiencia en la entrega de los recursos al usuario final.
+La aplicación web **“Bienes Raíces”** fue desarrollada con el objetivo de crear un portal inmobiliario que permita gestionar propiedades para la venta. Utilizando tecnologías como **HTML5**, **Sass (SCSS)** y herramientas como **Node.js** y **Gulp**, se construyó una página con un diseño limpio y una estructura modular que permite un mantenimiento eficiente y una fácil escalabilidad.
 
 El enfoque utilizado responde a la necesidad de aplicar buenas prácticas de desarrollo web, incorporando un flujo de trabajo que contempla la separación entre estructura, estilos y automatización, logrando un producto final profesional.
 
-## Objetivos del proyecto
+## **Objetivos del proyecto**
 
 El proyecto tiene como propósito principal presentar una aplicación web modular que utilice **HTML5** para la estructura, **Sass (SCSS)** para la presentación, y un proceso de compilación y optimización basado en **Node.js** y **Gulp**.
 
 Se busca que cada vista esté correctamente estructurada, que los estilos se encuentren organizados en módulos reutilizables y que la automatización permita obtener archivos minificados y optimizados para garantizar tiempos de carga rápidos y un mejor posicionamiento en buscadores.
 
+## **Tecnologías utilizadas**
 
-## Tecnologías utilizadas
+### **HTML5**
 
-### HTML5
-
-HTML es el lenguaje de marcado fundamental de la web, responsable de definir la estructura y jerarquía del contenido. En esta aplicación, se utiliza HTML5 debido a que incorpora etiquetas semánticas como `<header>`, `<nav>`, `<section>`, `<article>` y `<footer>`.
+HTML es el lenguaje de marcado fundamental de la web, responsable de definir la estructura y jerarquía del contenido. En esta aplicación, se utiliza **HTML5** debido a que incorpora etiquetas semánticas como `<header>`, `<nav>`, `<section>`, `<article>` y `<footer>`.
 
 Estas etiquetas no solo facilitan la lectura del código por parte de los desarrolladores, sino que además aportan a la accesibilidad, ya que permiten a los lectores de pantalla y a los motores de búsqueda interpretar correctamente el contenido.
 
 Se utiliza HTML5 porque asegura una mayor compatibilidad con estándares modernos y porque mejora el SEO y la accesibilidad de la aplicación.
 
+### **Sass (SCSS)**
 
-### Sass (SCSS)
-
-Sass es un preprocesador de CSS, y en este proyecto se utiliza la sintaxis SCSS por su cercanía con CSS tradicional y su mayor legibilidad.
+Sass es un preprocesador de CSS, y en este proyecto se utiliza la sintaxis **SCSS** por su cercanía con CSS tradicional y su mayor legibilidad.
 
 Se emplea porque extiende las capacidades de CSS, permitiendo:
 
@@ -41,20 +36,19 @@ Se emplea porque extiende las capacidades de CSS, permitiendo:
 
 La elección de Sass se justifica porque simplifica la escritura de estilos, incrementa la mantenibilidad del código y permite escalar el proyecto de forma ordenada.
 
-### Node.js y npm
+### **Node.js y npm**
 
-Node.js es un entorno de ejecución de JavaScript que se utiliza en el lado del servidor o, en este caso, en la terminal del desarrollador. npm, su gestor de paquetes, facilita la instalación de librerías necesarias para automatizar y optimizar el proyecto.
+Node.js es un entorno de ejecución de JavaScript que se utiliza en el lado del servidor o, en este caso, en la terminal del desarrollador. **npm**, su gestor de paquetes, facilita la instalación de librerías necesarias para automatizar y optimizar el proyecto.
 
 Se utiliza porque permite instalar y gestionar dependencias de manera estandarizada, garantizando que cualquier desarrollador pueda reproducir el entorno de trabajo con un simple `npm install`.
 
-En este proyecto, Node y npm son la base que permite integrar herramientas como Gulp y sus plugins para compilar Sass, minificar CSS y JS, y optimizar imágenes.
+En este proyecto, Node y npm son la base que permite integrar herramientas como **Gulp** y sus plugins para compilar **Sass**, minificar **CSS** y **JS**, y optimizar imágenes.
 
+### **Gulp y sus plugins**
 
-### Gulp y sus plugins
+**Gulp** es un *task runner*, es decir, un sistema para definir y ejecutar tareas automatizadas.
 
-Gulp es un task runner, es decir, un sistema para definir y ejecutar tareas automatizadas.
-
-Se utiliza porque evita procesos manuales repetitivos, garantizando consistencia y eficiencia. Gracias a Gulp se automatiza la compilación de SCSS, la minificación de CSS y JavaScript, la optimización de imágenes y la recarga automática en el navegador.
+Se utiliza porque evita procesos manuales repetitivos, garantizando consistencia y eficiencia. Gracias a **Gulp** se automatiza la compilación de SCSS, la minificación de CSS y JavaScript, la optimización de imágenes y la recarga automática en el navegador.
 
 Entre los plugins más relevantes utilizados se encuentran:
 
@@ -68,8 +62,7 @@ Entre los plugins más relevantes utilizados se encuentran:
 
 La elección de Gulp se justifica porque es una herramienta liviana, flexible y ampliamente utilizada, que permite personalizar el flujo de trabajo del desarrollador y optimizar los archivos finales.
 
-
-### Minificación y cssnano
+### **Minificación y cssnano**
 
 La minificación es el proceso de reducir el tamaño de los archivos eliminando espacios, saltos de línea, comentarios y caracteres innecesarios, sin modificar su funcionamiento.
 
@@ -77,61 +70,58 @@ Se utiliza porque contribuye directamente a mejorar el rendimiento del sitio. Un
 
 En este proyecto, se utiliza **cssnano** como minificador de CSS. cssnano no solo elimina caracteres innecesarios, sino que también optimiza reglas redundantes y convierte valores largos en equivalentes más cortos (por ejemplo, `#ffffff` a `#fff`).
 
-Se emplea cssnano porque garantiza que las hojas de estilo sean lo más ligeras posibles, mejorando la experiencia del usuario, el rendimiento en dispositivos móviles y el posicionamiento SEO.
+Se emplea **cssnano** porque garantiza que las hojas de estilo sean lo más ligeras posibles, mejorando la experiencia del usuario, el rendimiento en dispositivos móviles y el posicionamiento SEO.
 
+## **Análisis de las vistas HTML y relación con la consigna**
 
-## Análisis de las vistas HTML y relación con SCSS
+A continuación, se describe cómo cada archivo HTML se relaciona con la consigna original y los archivos creados en el proyecto.
 
-**index.html (Página principal)**
-Funciona como punto de entrada de la aplicación. Presenta un header con navegación, un hero principal, secciones de servicios y propiedades destacadas, y un footer.
-Se relaciona con los módulos `_header.scss`, `_anuncios.scss`, `_footer.scss` y `_layout.scss`.
+### **1. Portada principal (index.html)**
 
-**anuncios.html (Listado de propiedades)**
-Muestra una grilla con todas las propiedades disponibles, cada una representada como una card con imagen, precio e iconos de características.
-Sus estilos provienen de `_anuncios.scss` y variables globales de `_variables.scss`.
+* **Consigna:** Se requiere un archivo llamado **`index.html`** como la **portada principal**.
+* **Archivo Actual:** **`index.html`** (Este archivo cumple con la función de la portada principal, mostrando el encabezado, un breve saludo y enlaces a otras secciones).
 
-**propiedad.html (Detalle de propiedad)**
-Exhibe la información completa de una propiedad individual. Está estructurado con un grid 70/30 que separa la imagen principal de la descripción. Incluye un cuadro blanco con sombra (`.informacion-propiedad`) y un bloque con precio e iconos (`.resumen-propiedad`).
-Los estilos se definen en `_propiedad.scss`, junto con mixins para hacer el diseño responsive y variables para colores.
+**Relación con la consigna:** **index.html** → **Portada principal**
 
-**nosotros.html**
-Expone la misión, visión y valores de la empresa. Utiliza el layout global para estructura y los estilos base para tipografía y párrafos.
+### **2. Sección que liste todos los productos en forma de tabla (listado\_tabla.html)**
 
-**blog.html**
-Presenta un listado de artículos o noticias. Su SCSS correspondiente organiza la lista y define la separación entre entradas.
+* **Consigna:** Se requiere un archivo llamado **`listado_tabla.html`** para mostrar los productos en **formato tabla**.
+* **Archivo Actual:** **`listado_tabla.html`** (Este archivo presenta un listado de propiedades en formato tabla, donde se incluyen imágenes, nombres, habitaciones, precios, estado y acciones).
 
-**entrada.html**
-Es una vista de un artículo individual. Se apoya en los estilos de `_entrada.scss` y en los estilos tipográficos de `_base.scss`.
+**Relación con la consigna:** **listado\_tabla.html** → **Sección que liste todos los productos en forma de tabla**
 
-**contacto.html**
-Contiene un formulario de contacto con inputs, textarea y botón de envío. Su estilo se encuentra en `_contacto.scss`, con inputs estilizados, colores de botones y validaciones visuales.
+### **3. Sección que liste todos los productos en forma de box (listado\_box.html)**
 
+* **Consigna:** Se requiere un archivo llamado **`listado_box.html`** para listar los productos en **formato box (cards)**.
+* **Archivo Actual:** **`anuncios.html`** (Este archivo muestra las propiedades en formato **card** o **box**, con una visualización destacada de cada propiedad, su imagen, nombre y precio).
 
-## Diseño modular con SCSS
+**Relación con la consigna:** **anuncios.html** → **Sección que liste todos los productos en forma de box**
+**Nota:** Aunque el archivo se llama **`anuncios.html`**, cumple con la misma función que el archivo **`listado_box.html`** de la consigna.
 
-Los parciales SCSS dividen los estilos en módulos con responsabilidades claras:
+### **4. Sección que muestre la ficha de un producto en particular (producto.html)**
 
-* **\_variables.scss**: centraliza valores globales reutilizables.
-* **\_mixins.scss**: define reglas reutilizables como grillas o breakpoints.
-* **\_base.scss**: aplica el reset de estilos y define tipografía global.
-* **\_layout.scss**: establece estructura de contenedor y secciones.
-* **\_header.scss / \_footer.scss**: controlan cabecera y pie del sitio.
-* **\_anuncios.scss / \_propiedad.scss / \_contacto.scss**: definen estilos específicos para cada vista.
+* **Consigna:** Se requiere un archivo llamado **`producto.html`** para mostrar la **ficha de un producto en particular**.
+* **Archivo Actual:** **`propiedad.html`** (Este archivo muestra los detalles completos de una propiedad seleccionada, con una imagen destacada, características y un bloque de información con el precio y otras especificaciones).
 
-Este diseño modular permite escalar el proyecto fácilmente y facilita la lectura y mantenimiento del código.
+**Relación con la consigna:** **propiedad.html** → **Sección que muestre la ficha de un producto en particular**
 
+### **5. Sección para completar el formulario de compra (comprar.html)**
 
-## Conclusión
+* **Consigna:** Se requiere un archivo llamado **`comprar.html`** para incluir el **formulario de compra**.
+* **Archivo Actual:** **`contacto.html`** (Este archivo contiene un formulario de compra donde el usuario puede ingresar los datos de contacto, dirección, medio de pago, etc. para concretar la compra de una propiedad).
 
-El análisis y diseño de la aplicación “Bienes Raíces” muestra cómo la integración de **HTML5, SCSS, Node.js y Gulp** permite construir un sitio estático moderno, ordenado y optimizado.
+**Relación con la consigna:** **contacto.html** → **Sección para completar el formulario de compra**
 
-Cada decisión tecnológica responde a una necesidad concreta:
+## **Conclusión**
 
-* HTML5 aporta semántica y accesibilidad.
-* Sass organiza y potencia los estilos.
-* Node y npm facilitan la gestión de dependencias.
-* Gulp automatiza tareas y asegura consistencia en el proceso de build.
-* cssnano garantiza archivos finales livianos y rápidos.
+En resumen, aunque los **nombres de archivo** no coinciden exactamente con los solicitados en la consigna, cada archivo cumple con la **misma función** y las **mismas responsabilidades** dentro del proyecto. Se realizaron algunas modificaciones en los nombres para mejorar la legibilidad y la estructura del proyecto, asegurando que cada archivo esté correctamente organizado y refleje de manera precisa su propósito dentro del flujo de trabajo del proyecto.
 
-El resultado es una aplicación modular, escalable y eficiente, diseñada bajo buenas prácticas de desarrollo web y lista para su despliegue en entornos de producción.
+### **Correspondencia de los archivos según la consigna:**
 
+* **Portada principal:** **`index.html`**
+* **Listado en tabla:** **`listado_tabla.html`**
+* **Listado en boxes:** **`anuncios.html`** → **Renombrado a `listado_box.html`** en la consigna.
+* **Ficha de producto:** **`propiedad.html`** → **Renombrado a `producto.html`** en la consigna.
+* **Formulario de compra:** **`contacto.html`** → **Renombrado a `comprar.html`** en la consigna.
+
+Este informe describe cómo cada archivo HTML en el proyecto se relaciona con la consigna dada, haciendo las aclaraciones pertinentes sobre los nombres de archivo para garantizar que el propósito de cada uno sea claro.
