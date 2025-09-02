@@ -134,4 +134,3 @@ Este informe describe cómo cada archivo HTML en el proyecto se relaciona con la
 * **Formulario de compra:** **`contacto.html`** → **Renombrado a `comprar.html`** en la consigna.
 
 Este informe describe cómo cada archivo HTML en el proyecto se relaciona con la consigna dada, haciendo las aclaraciones pertinentes sobre los nombres de archivo para garantizar que el propósito de cada uno sea claro.
-
