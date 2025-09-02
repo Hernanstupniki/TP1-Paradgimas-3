@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # **Análisis y Diseño de la Aplicación Web “Bienes Raíces”**
+=======
+﻿# **Análisis y Diseño de la Aplicación Web “Bienes Raíces”**
+>>>>>>> 4d38ffd (Add pdf and README)
 
 ## **Introducción**
 
@@ -117,6 +121,17 @@ A continuación, se describe cómo cada archivo HTML se relaciona con la consign
 En resumen, aunque los **nombres de archivo** no coinciden exactamente con los solicitados en la consigna, cada archivo cumple con la **misma función** y las **mismas responsabilidades** dentro del proyecto. Se realizaron algunas modificaciones en los nombres para mejorar la legibilidad y la estructura del proyecto, asegurando que cada archivo esté correctamente organizado y refleje de manera precisa su propósito dentro del flujo de trabajo del proyecto.
 
 ### **Correspondencia de los archivos según la consigna:**
+<<<<<<< HEAD
+=======
+
+* **Portada principal:** **`index.html`**
+* **Listado en tabla:** **`listado_tabla.html`**
+* **Listado en boxes:** **`anuncios.html`** → **Renombrado a `listado_box.html`** en la consigna.
+* **Ficha de producto:** **`propiedad.html`** → **Renombrado a `producto.html`** en la consigna.
+* **Formulario de compra:** **`contacto.html`** → **Renombrado a `comprar.html`** en la consigna.
+
+Este informe describe cómo cada archivo HTML en el proyecto se relaciona con la consigna dada, haciendo las aclaraciones pertinentes sobre los nombres de archivo para garantizar que el propósito de cada uno sea claro.
+>>>>>>> 4d38ffd (Add pdf and README)
 
 * **Portada principal:** **`index.html`**
 * **Listado en tabla:** **`listado_tabla.html`**
